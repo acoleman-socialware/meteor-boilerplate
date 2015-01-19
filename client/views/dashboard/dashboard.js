@@ -6,12 +6,14 @@ Template.dashboard.helpers ({
     'selectedModeration': function() {
         //get the id of the moderation item being iterated through
         var modId = this._id;
+        console.log(modId);
     }
 });
 
 Template.dashboard.events({
-   'click .modd': function() {
-       var moddId = this._id;
-       Session.set('selectModd', moddId);
+   'click .mod': function() {
+       var modId = this._id;
+       console.log(modId);
+       Meteor.call('approveModeratedProfile', modId)
    }
 });

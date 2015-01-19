@@ -1,7 +1,7 @@
 <template name="dashboard">
   <div class="dashboard">
     <div class="page-header">
-      <h1>Dashboard</h1>
+      <h1>Moderation</h1>
     </div>
     <div class="list-group-item-heading">Profiles Submitted for Moderation</div>
     <ul class="list-group">
@@ -14,14 +14,12 @@
                 <li class="list-group-item">Description: {{description}}</li>
                 <li class="list-group-item">Profile Color: {{profile_link_color}}</li>
             </ul>
+              <input type="button" class="mod {{selectedModeration}} btn btn-primary" value="Approve to Publish">
           </li>
+
         {{/each}}
     </ul>
-    <ul class="list-group">
-      {{#each items}}
-        <li class="list-group-item">{{ name }} <span class="label label-default">{{ rating }}</span></li>
-      {{/each}}
-    </ul>
+
 
   </div>
 </template>
