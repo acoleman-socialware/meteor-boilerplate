@@ -3,7 +3,20 @@
     <div class="page-header">
       <h1>Dashboard</h1>
     </div>
-
+    <div class="list-group-item-heading">Profiles Submitted for Moderation</div>
+    <ul class="list-group">
+        {{#each moderation}}
+          <li class="modd list-group-item">
+            <ul class="list-group">
+                <li class="list-group-item">Name: {{name}}</li>
+                <li class="list-group-item">Url: {{url}}</li>
+                <li class="list-group-item">Location: {{location}}</li>
+                <li class="list-group-item">Description: {{description}}</li>
+                <li class="list-group-item">Profile Color: {{profile_link_color}}</li>
+            </ul>
+          </li>
+        {{/each}}
+    </ul>
     <ul class="list-group">
       {{#each items}}
         <li class="list-group-item">{{ name }} <span class="label label-default">{{ rating }}</span></li>

@@ -13,3 +13,7 @@ Meteor.publishComposite("items", function() {
     // ]
   }
 });
+
+Meteor.publish("theModeration", function() {
+  return Moderation.find();
+})
