@@ -6,7 +6,6 @@
 meteor-platform
 coffeescript
 less
-accounts-ui
 accounts-password
 alanning:roles
 iron:router
@@ -15,7 +14,6 @@ manuelschoebel:ms-seo
 cmather:handlebars-server@0.2.0
 joshowens:accounts-entry
 joshowens:simple-form
-meteorhacks:zones
 dburles:collection-helpers
 reywood:publish-composite
 mrt:moment
@@ -25,3 +23,10 @@ fuatsengul:iron-router-auth
 dburles:factory
 anti:fake
 cunneen:mailgun
+accounts-ui
+accounts-twitter
+mrt:twit
+
+
+
+meteorhacks:zones

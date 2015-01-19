@@ -1,9 +1,9 @@
 Meteor.startup(function() {
   if(Meteor.isClient) {
     SEO.config({
-      title: 'Project Title',
+      title: 'Socialware',
       meta: {
-        'description': 'A project by Differential.io'
+        'description': 'Trust Social.'
       },
       og: {
         'image': Meteor.absoluteUrl('share-image.png')

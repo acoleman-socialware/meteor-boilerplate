@@ -1,4 +1,6 @@
 Meteor.startup(function() {
+  var newRelic = Meteor.npmRequire('newrelic');
+  console.log(newRelic);
 
   Factory.define('item', Items, {
     name: function() { return Fake.sentence(); },
